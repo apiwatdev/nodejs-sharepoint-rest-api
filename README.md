@@ -1,20 +1,20 @@
 # nodejs-sharepoint-rest-api
 
-## Setup code
+### Setup code
 
 ---
 
 ### **sections**
 
-* Register add-In
-* Grant permission to an add-in
-* Working with post man
-* Authentication with nodejs (node-sp-auth)
-* Enable Basic Authentification in IIS Settings
-* Work with axios
-* Endpoint url helper (gd-sprest)
+- [] Register add-In
+- [] Grant permission to an add-in
+- [] Working with post man
+- [] Authentication with nodejs (node-sp-auth)
+- [] Enable Basic Authentification in IIS Settings
+- [] Work with axios
+- [] Endpoint url helper (gd-sprest)
 
-## Register add-In 
+### Register add-In 
 
 ## Grant permission to an add-in
 
