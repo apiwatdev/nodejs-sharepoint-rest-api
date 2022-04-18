@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "gd-sprest": "^6.9.3",
+    "node-sp-auth": "^3.0.4"
+  }
+}

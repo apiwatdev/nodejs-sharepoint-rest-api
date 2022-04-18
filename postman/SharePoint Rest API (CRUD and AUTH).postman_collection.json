@@ -1,0 +1,1338 @@
+{
+	"info": {
+		"_postman_id": "3b2a0956-6dba-4109-88f8-516e6a8aec8a",
+		"name": "SharePoint Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listname",
+			"item": [
+				{
+					"name": "Get Lists by  Title",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items",
+							"host": [
+								"{{site_url}}"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"getByTitle('listname')",
+								"Items"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items",
+									"host": [
+										"{{site_url}}"
+									],
+									"path": [
+										"_api",
+										"web",
+										"lists",
+										"getByTitle('listname')",
+										"Items"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;odata=verbose;charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Expires",
+									"value": "Sun, 03 Apr 2022 13:17:52 GMT"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Mon, 18 Apr 2022 13:17:52 GMT"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin,Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-SharePointHealthScore",
+									"value": "0"
+								},
+								{
+									"key": "X-SP-SERVERSTATE",
+									"value": "ReadOnly=0"
+								},
+								{
+									"key": "DATASERVICEVERSION",
+									"value": "3.0"
+								},
+								{
+									"key": "SPClientServiceRequestDuration",
+									"value": "97"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "SPRequestGuid",
+									"value": "f6ef34a0-3013-1000-0a11-7c8a4007ed82"
+								},
+								{
+									"key": "request-id",
+									"value": "f6ef34a0-3013-1000-0a11-7c8a4007ed82"
+								},
+								{
+									"key": "MS-CV",
+									"value": "oDTv9hMwABAKEXyKQAftgg.0"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000"
+								},
+								{
+									"key": "X-FRAME-OPTIONS",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com;"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "MicrosoftSharePointTeamServices",
+									"value": "16.0.0.22406"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-MS-InvokeApp",
+									"value": "1; RequireReadOnly"
+								},
+								{
+									"key": "P3P",
+									"value": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Apr 2022 13:17:51 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"d\": {\n        \"results\": [\n            {\n                \"__metadata\": {\n                    \"id\": \"5bf89d6f-cef2-42a3-9116-3bbe4681a1c2\",\n                    \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)\",\n                    \"etag\": \"\\\"1\\\"\",\n                    \"type\": \"SP.Data.ListnameListItem\"\n                },\n                \"FirstUniqueAncestorSecurableObject\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/FirstUniqueAncestorSecurableObject\"\n                    }\n                },\n                \"RoleAssignments\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/RoleAssignments\"\n                    }\n                },\n                \"AttachmentFiles\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/AttachmentFiles\"\n                    }\n                },\n                \"ContentType\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/ContentType\"\n                    }\n                },\n                \"GetDlpPolicyTip\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/GetDlpPolicyTip\"\n                    }\n                },\n                \"FieldValuesAsHtml\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/FieldValuesAsHtml\"\n                    }\n                },\n                \"FieldValuesAsText\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/FieldValuesAsText\"\n                    }\n                },\n                \"FieldValuesForEdit\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/FieldValuesForEdit\"\n                    }\n                },\n                \"File\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/File\"\n                    }\n                },\n                \"Folder\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/Folder\"\n                    }\n                },\n                \"LikedByInformation\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/LikedByInformation\"\n                    }\n                },\n                \"ParentList\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/ParentList\"\n                    }\n                },\n                \"Properties\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/Properties\"\n                    }\n                },\n                \"Versions\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)/Versions\"\n                    }\n                },\n                \"FileSystemObjectType\": 0,\n                \"Id\": 2,\n                \"ServerRedirectedEmbedUri\": null,\n                \"ServerRedirectedEmbedUrl\": \"\",\n                \"ID\": 2,\n                \"ContentTypeId\": \"0x0100BC55062C22AE3A4EA21EC0BF0F01AC0C000C26E6C1DB99A64B8E12E224F6B74291\",\n                \"Title\": \"111111\",\n                \"Modified\": \"2022-04-14T03:09:13Z\",\n                \"Created\": \"2022-04-14T03:09:13Z\",\n                \"AuthorId\": 9,\n                \"EditorId\": 9,\n                \"OData__UIVersionString\": \"1.0\",\n                \"Attachments\": false,\n                \"GUID\": \"c43e55f5-0158-46f6-af81-536aeb15edd8\",\n                \"ComplianceAssetId\": null,\n                \"lastname\": \"soodlek\",\n                \"firstname\": \"apiwat \"\n            },\n            {\n                \"__metadata\": {\n                    \"id\": \"4db00459-257d-4754-ba42-9445e46edcb1\",\n                    \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)\",\n                    \"etag\": \"\\\"1\\\"\",\n                    \"type\": \"SP.Data.ListnameListItem\"\n                },\n                \"FirstUniqueAncestorSecurableObject\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/FirstUniqueAncestorSecurableObject\"\n                    }\n                },\n                \"RoleAssignments\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/RoleAssignments\"\n                    }\n                },\n                \"AttachmentFiles\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/AttachmentFiles\"\n                    }\n                },\n                \"ContentType\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/ContentType\"\n                    }\n                },\n                \"GetDlpPolicyTip\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/GetDlpPolicyTip\"\n                    }\n                },\n                \"FieldValuesAsHtml\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/FieldValuesAsHtml\"\n                    }\n                },\n                \"FieldValuesAsText\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/FieldValuesAsText\"\n                    }\n                },\n                \"FieldValuesForEdit\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/FieldValuesForEdit\"\n                    }\n                },\n                \"File\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/File\"\n                    }\n                },\n                \"Folder\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/Folder\"\n                    }\n                },\n                \"LikedByInformation\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/LikedByInformation\"\n                    }\n                },\n                \"ParentList\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/ParentList\"\n                    }\n                },\n                \"Properties\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/Properties\"\n                    }\n                },\n                \"Versions\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)/Versions\"\n                    }\n                },\n                \"FileSystemObjectType\": 0,\n                \"Id\": 3,\n                \"ServerRedirectedEmbedUri\": null,\n                \"ServerRedirectedEmbedUrl\": \"\",\n                \"ID\": 3,\n                \"ContentTypeId\": \"0x0100BC55062C22AE3A4EA21EC0BF0F01AC0C000C26E6C1DB99A64B8E12E224F6B74291\",\n                \"Title\": \"22222\",\n                \"Modified\": \"2022-04-14T03:09:30Z\",\n                \"Created\": \"2022-04-14T03:09:30Z\",\n                \"AuthorId\": 9,\n                \"EditorId\": 9,\n                \"OData__UIVersionString\": \"1.0\",\n                \"Attachments\": false,\n                \"GUID\": \"eedcf2db-b3fa-4160-bf11-192d41518c57\",\n                \"ComplianceAssetId\": null,\n                \"lastname\": \"Boon\",\n                \"firstname\": \"Peter\"\n            },\n            {\n                \"__metadata\": {\n                    \"id\": \"63716ef0-abf6-41b4-8e27-bbc08bf795de\",\n                    \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)\",\n                    \"etag\": \"\\\"2\\\"\",\n                    \"type\": \"SP.Data.ListnameListItem\"\n                },\n                \"FirstUniqueAncestorSecurableObject\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/FirstUniqueAncestorSecurableObject\"\n                    }\n                },\n                \"RoleAssignments\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/RoleAssignments\"\n                    }\n                },\n                \"AttachmentFiles\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/AttachmentFiles\"\n                    }\n                },\n                \"ContentType\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/ContentType\"\n                    }\n                },\n                \"GetDlpPolicyTip\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/GetDlpPolicyTip\"\n                    }\n                },\n                \"FieldValuesAsHtml\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/FieldValuesAsHtml\"\n                    }\n                },\n                \"FieldValuesAsText\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/FieldValuesAsText\"\n                    }\n                },\n                \"FieldValuesForEdit\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/FieldValuesForEdit\"\n                    }\n                },\n                \"File\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/File\"\n                    }\n                },\n                \"Folder\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/Folder\"\n                    }\n                },\n                \"LikedByInformation\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/LikedByInformation\"\n                    }\n                },\n                \"ParentList\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/ParentList\"\n                    }\n                },\n                \"Properties\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/Properties\"\n                    }\n                },\n                \"Versions\": {\n                    \"__deferred\": {\n                        \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)/Versions\"\n                    }\n                },\n                \"FileSystemObjectType\": 0,\n                \"Id\": 4,\n                \"ServerRedirectedEmbedUri\": null,\n                \"ServerRedirectedEmbedUrl\": \"\",\n                \"ID\": 4,\n                \"ContentTypeId\": \"0x0100BC55062C22AE3A4EA21EC0BF0F01AC0C000C26E6C1DB99A64B8E12E224F6B74291\",\n                \"Title\": \"33333\",\n                \"Modified\": \"2022-04-14T03:09:51Z\",\n                \"Created\": \"2022-04-14T03:09:42Z\",\n                \"AuthorId\": 9,\n                \"EditorId\": 9,\n                \"OData__UIVersionString\": \"2.0\",\n                \"Attachments\": false,\n                \"GUID\": \"427960b2-8e3a-47a8-8a6f-cd6432479dc4\",\n                \"ComplianceAssetId\": null,\n                \"lastname\": \"Smith\",\n                \"firstname\": \"Black\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get a lists by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items(5)",
+							"host": [
+								"{{site_url}}"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"getByTitle('listname')",
+								"Items(5)"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items(5)",
+									"host": [
+										"{{site_url}}"
+									],
+									"path": [
+										"_api",
+										"web",
+										"lists",
+										"getByTitle('listname')",
+										"Items(5)"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;odata=verbose;charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Expires",
+									"value": "Sun, 03 Apr 2022 13:49:24 GMT"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Mon, 18 Apr 2022 13:49:24 GMT"
+								},
+								{
+									"key": "ETag",
+									"value": "\"826bb1e3-940c-442c-b080-35e6ab73ea67,2\""
+								},
+								{
+									"key": "Vary",
+									"value": "Origin,Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-SharePointHealthScore",
+									"value": "2"
+								},
+								{
+									"key": "X-SP-SERVERSTATE",
+									"value": "ReadOnly=0"
+								},
+								{
+									"key": "DATASERVICEVERSION",
+									"value": "3.0"
+								},
+								{
+									"key": "SPClientServiceRequestDuration",
+									"value": "37"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "SPRequestGuid",
+									"value": "c3f134a0-c0fa-1000-0972-3debc1793192"
+								},
+								{
+									"key": "request-id",
+									"value": "c3f134a0-c0fa-1000-0972-3debc1793192"
+								},
+								{
+									"key": "MS-CV",
+									"value": "oDTxw/rAABAJcj3rwXkxkg.0"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000"
+								},
+								{
+									"key": "X-FRAME-OPTIONS",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com;"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "MicrosoftSharePointTeamServices",
+									"value": "16.0.0.22406"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-MS-InvokeApp",
+									"value": "1; RequireReadOnly"
+								},
+								{
+									"key": "P3P",
+									"value": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Apr 2022 13:49:24 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"d\": {\n        \"__metadata\": {\n            \"id\": \"4676fb77-5e50-420e-b0a5-6cdcb78e37b7\",\n            \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)\",\n            \"etag\": \"\\\"2\\\"\",\n            \"type\": \"SP.Data.ListnameListItem\"\n        },\n        \"FirstUniqueAncestorSecurableObject\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/FirstUniqueAncestorSecurableObject\"\n            }\n        },\n        \"RoleAssignments\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/RoleAssignments\"\n            }\n        },\n        \"AttachmentFiles\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/AttachmentFiles\"\n            }\n        },\n        \"ContentType\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/ContentType\"\n            }\n        },\n        \"GetDlpPolicyTip\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/GetDlpPolicyTip\"\n            }\n        },\n        \"FieldValuesAsHtml\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/FieldValuesAsHtml\"\n            }\n        },\n        \"FieldValuesAsText\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/FieldValuesAsText\"\n            }\n        },\n        \"FieldValuesForEdit\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/FieldValuesForEdit\"\n            }\n        },\n        \"File\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/File\"\n            }\n        },\n        \"Folder\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/Folder\"\n            }\n        },\n        \"LikedByInformation\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/LikedByInformation\"\n            }\n        },\n        \"ParentList\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/ParentList\"\n            }\n        },\n        \"Properties\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/Properties\"\n            }\n        },\n        \"Versions\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(5)/Versions\"\n            }\n        },\n        \"FileSystemObjectType\": 0,\n        \"Id\": 5,\n        \"ServerRedirectedEmbedUri\": null,\n        \"ServerRedirectedEmbedUrl\": \"\",\n        \"ID\": 5,\n        \"ContentTypeId\": \"0x0100BC55062C22AE3A4EA21EC0BF0F01AC0C000C26E6C1DB99A64B8E12E224F6B74291\",\n        \"Title\": \"55555\",\n        \"Modified\": \"2022-04-18T13:48:15Z\",\n        \"Created\": \"2022-04-18T13:37:19Z\",\n        \"AuthorId\": 1073741822,\n        \"EditorId\": 1073741822,\n        \"OData__UIVersionString\": \"2.0\",\n        \"Attachments\": false,\n        \"GUID\": \"d40e6c13-03cf-43f1-a950-77f7d87b2161\",\n        \"ComplianceAssetId\": null,\n        \"lastname\": \"Landcer\",\n        \"firstname\": \"Bone\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Lists by  Title With Selete Field",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items?$select=Title",
+							"host": [
+								"{{site_url}}"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"getByTitle('listname')",
+								"Items"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "Title"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items?$select=Title",
+									"host": [
+										"{{site_url}}"
+									],
+									"path": [
+										"_api",
+										"web",
+										"lists",
+										"getByTitle('listname')",
+										"Items"
+									],
+									"query": [
+										{
+											"key": "$select",
+											"value": "Title"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;odata=verbose;charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Expires",
+									"value": "Sun, 03 Apr 2022 13:20:42 GMT"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Mon, 18 Apr 2022 13:20:42 GMT"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin,Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-SharePointHealthScore",
+									"value": "1"
+								},
+								{
+									"key": "X-SP-SERVERSTATE",
+									"value": "ReadOnly=0"
+								},
+								{
+									"key": "DATASERVICEVERSION",
+									"value": "3.0"
+								},
+								{
+									"key": "SPClientServiceRequestDuration",
+									"value": "34"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "SPRequestGuid",
+									"value": "1ff034a0-6097-1000-0972-3ede20aee317"
+								},
+								{
+									"key": "request-id",
+									"value": "1ff034a0-6097-1000-0972-3ede20aee317"
+								},
+								{
+									"key": "MS-CV",
+									"value": "oDTwH5dgABAJcj7eIK7jFw.0"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000"
+								},
+								{
+									"key": "X-FRAME-OPTIONS",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com;"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "MicrosoftSharePointTeamServices",
+									"value": "16.0.0.22406"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-MS-InvokeApp",
+									"value": "1; RequireReadOnly"
+								},
+								{
+									"key": "P3P",
+									"value": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Apr 2022 13:20:41 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"d\": {\n        \"results\": [\n            {\n                \"__metadata\": {\n                    \"id\": \"46ab677c-bb96-450e-8835-3cabd3eb0ad3\",\n                    \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(2)\",\n                    \"etag\": \"\\\"1\\\"\",\n                    \"type\": \"SP.Data.ListnameListItem\"\n                },\n                \"Title\": \"111111\"\n            },\n            {\n                \"__metadata\": {\n                    \"id\": \"3b38ab10-2fbf-4b25-9f14-33d9b831e001\",\n                    \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(3)\",\n                    \"etag\": \"\\\"1\\\"\",\n                    \"type\": \"SP.Data.ListnameListItem\"\n                },\n                \"Title\": \"22222\"\n            },\n            {\n                \"__metadata\": {\n                    \"id\": \"ddc26556-ca97-4a07-be71-18518b7debdb\",\n                    \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(4)\",\n                    \"etag\": \"\\\"2\\\"\",\n                    \"type\": \"SP.Data.ListnameListItem\"\n                },\n                \"Title\": \"33333\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a item list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"__metadata\": {\n    \"type\": \"SP.Data.ListnameListItem\"\n  },\n  \"Title\": \"6666\",\n  \"firstname\": \"Johnney\",\n  \"lastname\": \"Groo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items",
+							"host": [
+								"{{site_url}}"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"getByTitle('listname')",
+								"Items"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"__metadata\": {\n    \"type\": \"SP.Data.ListnameListItem\"\n  },\n  \"Title\": \"6666\",\n  \"firstname\": \"Johnney\",\n  \"lastname\": \"Groo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items",
+									"host": [
+										"{{site_url}}"
+									],
+									"path": [
+										"_api",
+										"web",
+										"lists",
+										"getByTitle('listname')",
+										"Items"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;odata=verbose;charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "Sun, 03 Apr 2022 13:37:27 GMT"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Mon, 18 Apr 2022 13:37:27 GMT"
+								},
+								{
+									"key": "ETag",
+									"value": "\"bc80397f-9010-4850-90a7-899a2722afa9,1\""
+								},
+								{
+									"key": "Location",
+									"value": "https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-SharePointHealthScore",
+									"value": "3"
+								},
+								{
+									"key": "X-SP-SERVERSTATE",
+									"value": "ReadOnly=0"
+								},
+								{
+									"key": "DATASERVICEVERSION",
+									"value": "3.0"
+								},
+								{
+									"key": "SPClientServiceRequestDuration",
+									"value": "82"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "SPRequestGuid",
+									"value": "14f134a0-e0e8-1000-1723-9548db0f1176"
+								},
+								{
+									"key": "request-id",
+									"value": "14f134a0-e0e8-1000-1723-9548db0f1176"
+								},
+								{
+									"key": "MS-CV",
+									"value": "oDTxFOjgABAXI5VI2w8Rdg.0"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000"
+								},
+								{
+									"key": "X-FRAME-OPTIONS",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com;"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "MicrosoftSharePointTeamServices",
+									"value": "16.0.0.22406"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-MS-InvokeApp",
+									"value": "1; RequireReadOnly"
+								},
+								{
+									"key": "P3P",
+									"value": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Apr 2022 13:37:26 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"d\": {\n        \"__metadata\": {\n            \"id\": \"f7bac284-18ca-437e-88bf-2aaddd5cde98\",\n            \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)\",\n            \"etag\": \"\\\"1\\\"\",\n            \"type\": \"SP.Data.ListnameListItem\"\n        },\n        \"FirstUniqueAncestorSecurableObject\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/FirstUniqueAncestorSecurableObject\"\n            }\n        },\n        \"RoleAssignments\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/RoleAssignments\"\n            }\n        },\n        \"AttachmentFiles\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/AttachmentFiles\"\n            }\n        },\n        \"ContentType\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/ContentType\"\n            }\n        },\n        \"GetDlpPolicyTip\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/GetDlpPolicyTip\"\n            }\n        },\n        \"FieldValuesAsHtml\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/FieldValuesAsHtml\"\n            }\n        },\n        \"FieldValuesAsText\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/FieldValuesAsText\"\n            }\n        },\n        \"FieldValuesForEdit\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/FieldValuesForEdit\"\n            }\n        },\n        \"File\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/File\"\n            }\n        },\n        \"Folder\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/Folder\"\n            }\n        },\n        \"LikedByInformation\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/LikedByInformation\"\n            }\n        },\n        \"ParentList\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/ParentList\"\n            }\n        },\n        \"Properties\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/Properties\"\n            }\n        },\n        \"Versions\": {\n            \"__deferred\": {\n                \"uri\": \"https://apiwatdev.sharepoint.com/sites/Demo/_api/Web/Lists(guid'573cde9b-94a3-421e-bf00-c3a540bf28eb')/Items(6)/Versions\"\n            }\n        },\n        \"FileSystemObjectType\": 0,\n        \"Id\": 6,\n        \"ServerRedirectedEmbedUri\": null,\n        \"ServerRedirectedEmbedUrl\": \"\",\n        \"ID\": 6,\n        \"ContentTypeId\": \"0x0100BC55062C22AE3A4EA21EC0BF0F01AC0C000C26E6C1DB99A64B8E12E224F6B74291\",\n        \"Title\": \"6666\",\n        \"Modified\": \"2022-04-18T13:37:27Z\",\n        \"Created\": \"2022-04-18T13:37:27Z\",\n        \"AuthorId\": 1073741822,\n        \"EditorId\": 1073741822,\n        \"OData__UIVersionString\": \"1.0\",\n        \"Attachments\": false,\n        \"GUID\": \"e7dc67b9-1b8b-4138-b28d-b644885c9c40\",\n        \"ComplianceAssetId\": null,\n        \"lastname\": \"Groo\",\n        \"firstname\": \"Johnney\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update a item list by item id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "If-Match",
+								"value": "*",
+								"type": "text"
+							},
+							{
+								"key": "X-HTTP-Method",
+								"value": "MERGE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"__metadata\": {\n    \"type\": \"SP.Data.ListnameListItem\"\n  },\n  \"Title\": \"55555\",\n  \"firstname\": \"Bone\",\n  \"lastname\": \"Landcer\"\n}"
+						},
+						"url": {
+							"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items('5')",
+							"host": [
+								"{{site_url}}"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"getByTitle('listname')",
+								"Items('5')"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "If-Match",
+										"value": "*",
+										"type": "text"
+									},
+									{
+										"key": "X-HTTP-Method",
+										"value": "MERGE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"__metadata\": {\n    \"type\": \"SP.Data.ListnameListItem\"\n  },\n  \"Title\": \"55555\",\n  \"firstname\": \"Bone\",\n  \"lastname\": \"Landcer\"\n}"
+								},
+								"url": {
+									"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items('5')",
+									"host": [
+										"{{site_url}}"
+									],
+									"path": [
+										"_api",
+										"web",
+										"lists",
+										"getByTitle('listname')",
+										"Items('5')"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Expires",
+									"value": "Sun, 03 Apr 2022 13:48:14 GMT"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Mon, 18 Apr 2022 13:48:14 GMT"
+								},
+								{
+									"key": "ETag",
+									"value": "\"826bb1e3-940c-442c-b080-35e6ab73ea67,2\""
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-SharePointHealthScore",
+									"value": "2"
+								},
+								{
+									"key": "X-SP-SERVERSTATE",
+									"value": "ReadOnly=0"
+								},
+								{
+									"key": "DATASERVICEVERSION",
+									"value": "3.0"
+								},
+								{
+									"key": "SPClientServiceRequestDuration",
+									"value": "328"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "SPRequestGuid",
+									"value": "b2f134a0-10f9-1000-0972-35d9e6243ef8"
+								},
+								{
+									"key": "request-id",
+									"value": "b2f134a0-10f9-1000-0972-35d9e6243ef8"
+								},
+								{
+									"key": "MS-CV",
+									"value": "oDTxsvkQABAJcjXZ5iQ++A.0"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000"
+								},
+								{
+									"key": "X-FRAME-OPTIONS",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com;"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "MicrosoftSharePointTeamServices",
+									"value": "16.0.0.22406"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-MS-InvokeApp",
+									"value": "1; RequireReadOnly"
+								},
+								{
+									"key": "P3P",
+									"value": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Apr 2022 13:48:14 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Delete a List",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "X-HTTP-Method",
+								"value": "DELETE",
+								"type": "text"
+							},
+							{
+								"key": "If-Match",
+								"value": "*",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items(6)",
+							"host": [
+								"{{site_url}}"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"getByTitle('listname')",
+								"Items(6)"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "X-HTTP-Method",
+										"value": "DELETE",
+										"type": "text"
+									},
+									{
+										"key": "If-Match",
+										"value": "*",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{site_url}}/_api/web/lists/getByTitle('listname')/Items(6)",
+									"host": [
+										"{{site_url}}"
+									],
+									"path": [
+										"_api",
+										"web",
+										"lists",
+										"getByTitle('listname')",
+										"Items(6)"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Expires",
+									"value": "Sun, 03 Apr 2022 13:50:49 GMT"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Mon, 18 Apr 2022 13:50:49 GMT"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-SharePointHealthScore",
+									"value": "0"
+								},
+								{
+									"key": "X-SP-SERVERSTATE",
+									"value": "ReadOnly=0"
+								},
+								{
+									"key": "DATASERVICEVERSION",
+									"value": "3.0"
+								},
+								{
+									"key": "SPClientServiceRequestDuration",
+									"value": "182"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "SPRequestGuid",
+									"value": "d8f134a0-40c1-1000-0972-3601efc7bed1"
+								},
+								{
+									"key": "request-id",
+									"value": "d8f134a0-40c1-1000-0972-3601efc7bed1"
+								},
+								{
+									"key": "MS-CV",
+									"value": "oDTx2MFAABAJcjYB78e+0Q.0"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000"
+								},
+								{
+									"key": "X-FRAME-OPTIONS",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com;"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "MicrosoftSharePointTeamServices",
+									"value": "16.0.0.22406"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-MS-InvokeApp",
+									"value": "1; RequireReadOnly"
+								},
+								{
+									"key": "P3P",
+									"value": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Apr 2022 13:50:49 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get Access Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{appReg_clientId}}@{{realm}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{appReg_clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "{{principal}}/{{SiteDomain}}@{{realm}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://accounts.accesscontrol.windows.net/{{realm}}/tokens/OAuth/2 ",
+					"protocol": "https",
+					"host": [
+						"accounts",
+						"accesscontrol",
+						"windows",
+						"net"
+					],
+					"path": [
+						"{{realm}}",
+						"tokens",
+						"OAuth",
+						"2 "
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{appReg_clientId}}@{{realm}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{appReg_clientSecret}}",
+									"type": "text"
+								},
+								{
+									"key": "resource",
+									"value": "{{principal}}/{{SiteDomain}}@{{realm}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://accounts.accesscontrol.windows.net/{{realm}}/tokens/OAuth/2 ",
+							"protocol": "https",
+							"host": [
+								"accounts",
+								"accesscontrol",
+								"windows",
+								"net"
+							],
+							"path": [
+								"{{realm}}",
+								"tokens",
+								"OAuth",
+								"2 "
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"DSP CUR OTPi IND OTRi ONL FIN\""
+						},
+						{
+							"key": "x-ms-request-id",
+							"value": "5de5e88c-9d99-490d-a6bd-0b356403ee00"
+						},
+						{
+							"key": "x-ms-ests-server",
+							"value": "2.1.12621.9 - SEASLR1 ProdSlices"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "fpc=At94OPnGXi5PgxF_n-NBlG1R2jgOAQAAAGRZ79kOAAAA; expires=Wed, 18-May-2022 13:06:44 GMT; path=/; secure; HttpOnly; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "stsservicecookie=estsfd; path=/; secure; samesite=none; httponly"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Apr 2022 13:06:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1425"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"expires_in\": \"86399\",\n    \"not_before\": \"1650286904\",\n    \"expires_on\": \"1650373604\",\n    \"resource\": \"00000003-0000-0ff1-ce00-000000000000/apiwatdev.sharepoint.com@faf02a40-add9-4fb7-828b-bad2755b0fc7\",\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYXBpd2F0ZGV2LnNoYXJlcG9pbnQuY29tQGZhZjAyYTQwLWFkZDktNGZiNy04MjhiLWJhZDI3NTViMGZjNyIsImlzcyI6IjAwMDAwMDAxLTAwMDAtMDAwMC1jMDAwLTAwMDAwMDAwMDAwMEBmYWYwMmE0MC1hZGQ5LTRmYjctODI4Yi1iYWQyNzU1YjBmYzciLCJpYXQiOjE2NTAyODY5MDQsIm5iZiI6MTY1MDI4NjkwNCwiZXhwIjoxNjUwMzczNjA0LCJpZGVudGl0eXByb3ZpZGVyIjoiMDAwMDAwMDEtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDAwQGZhZjAyYTQwLWFkZDktNGZiNy04MjhiLWJhZDI3NTViMGZjNyIsIm5hbWVpZCI6IjExYTViMWJlLTk3NDMtNDQxMC1iN2E0LTE3OGM0NzJlODliOEBmYWYwMmE0MC1hZGQ5LTRmYjctODI4Yi1iYWQyNzU1YjBmYzciLCJvaWQiOiI3MjVhMzRkYy03Yzc1LTQ5MzUtODhmNi0xYmIwZDIzMzEzYmYiLCJzdWIiOiI3MjVhMzRkYy03Yzc1LTQ5MzUtODhmNi0xYmIwZDIzMzEzYmYiLCJ0cnVzdGVkZm9yZGVsZWdhdGlvbiI6ImZhbHNlIn0.Kgm7oHs0ZMFpJvz3YhT9LFph3J2zqK984FCIGQGCqWLoNVTCL75VWO9x5iqBA2wGiz3xI_5BqpD6QAWFfTQbjN7fTSWJCWYUZytwLqlP2sVf1jTnXJfdW4cvlggID2i1RBg6bJtrrhLfk_oQbNs_ogZyM6bY9phpPKmU0Igr8VkijH88Cx2ucPEmjJZNvwKAXn7OoW_bDg0jQqO5ZCv4l9c_NKqOUBcHbLoJhz8lHEN90SJGw2-fWI2PcdW1bOIyez_BaX_smsIl_SSi3xoxMERhYOmci2WPJ7vgYzdAJujjFBUBaNibMbJFqv8LJp9Gxkbso6RLNt0ZlY-dNGOC1g\"\n}"
+				}
+			]
+		}
+	]
+}
