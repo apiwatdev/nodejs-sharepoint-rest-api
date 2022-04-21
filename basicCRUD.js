@@ -8,11 +8,6 @@ var clientSecret = "client secret";
 var url = "your_sharepoint_url";
 var listname = "your_list_name";
 
-clientId = "045a0ccc-9d8e-4605-a39f-0aa5da0212a5";
-clientSecret = "+AVOfOnjrmcKLAkKxtL1ls3UGFlaMQzE9+h3R+Zigpg=";
-url = "https://apiwatdev.sharepoint.com/sites/Demo";
-listname = "listname";
-
 module.exports.getItems = async () => {
   spAuth(clientId, clientSecret, url).then((headers) => {
     const query = $REST.List(listname).Items().getInfo();
