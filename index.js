@@ -12,8 +12,8 @@ const $REST = require("gd-sprest");
 
 update
 (async () => {
-      var clientId = "045a0ccc-9d8e-4605-a39f-0aa5da0212a5";
-      var clientSecret = "+AVOfOnjrmcKLAkKxtL1ls3UGFlaMQzE9+h3R+Zigpg=";
+      var clientId = "";
+      var clientSecret = "";
       var url = "https://apiwatdev.sharepoint.com/sites/Demo";
       const header = await spAuth(clientId, clientSecret, url);
       const query = $REST
@@ -37,8 +37,8 @@ update
 
 // update
 // (async () => {
-//       var clientId = "045a0ccc-9d8e-4605-a39f-0aa5da0212a5";
-//       var clientSecret = "+AVOfOnjrmcKLAkKxtL1ls3UGFlaMQzE9+h3R+Zigpg=";
+//       var clientId = "";
+//       var clientSecret = "";
 //       var url = "https://apiwatdev.sharepoint.com/sites/Demo";
 //       const header = await spAuth(clientId, clientSecret, url);
 //       const query = $REST
@@ -63,8 +63,8 @@ update
 
 // create
 // (async () => {
-//   var clientId = "045a0ccc-9d8e-4605-a39f-0aa5da0212a5";
-//   var clientSecret = "+AVOfOnjrmcKLAkKxtL1ls3UGFlaMQzE9+h3R+Zigpg=";
+//   var clientId = "";
+//   var clientSecret = "";
 //   var url = "https://apiwatdev.sharepoint.com/sites/Demo";
 //   const header = await spAuth(clientId, clientSecret, url);
 //   const query = $REST
@@ -87,8 +87,8 @@ update
 
 // read
 // (async ()=>{
-//   var clientId = "045a0ccc-9d8e-4605-a39f-0aa5da0212a5";
-//   var clientSecret = "+AVOfOnjrmcKLAkKxtL1ls3UGFlaMQzE9+h3R+Zigpg=";
+//   var clientId = "";
+//   var clientSecret = "";
 //   var url = "https://apiwatdev.sharepoint.com/sites/Demo";
 //   const header = await spAuth(clientId,clientSecret,url);
 //   const query = $REST.List("listname").Items().getById().getInfo()
